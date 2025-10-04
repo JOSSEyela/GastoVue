@@ -18,7 +18,7 @@
         <!-- Lista -->
         <ul class="space-y-2">
             <li v-for="(gasto, i) in gastos" :key="i"
-                class="flex justify-between items-center bg-sky-100 p-2 rounded">
+                class="flex justify-between items-center bg-sky-100 p-2 rounded text-black">
             <span>{{ gasto.nombre }} - ${{ gasto.monto }}</span>
             <button @click="eliminarGasto(i)" class="text-red-500">X</button>
             </li>
